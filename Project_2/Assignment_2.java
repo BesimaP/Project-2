@@ -194,7 +194,7 @@ void main(){
         System.out.println("No match");
     }  */
 
-    //Opgave 2.24: Grade boundaries
+    /*Opgave 2.24: Grade boundaries
     int score = 75;
     String grade;
     
@@ -209,9 +209,9 @@ void main(){
     } else {
         grade = "F";
     }
-    System.out.println("Grade: " + grade);
+    System.out.println("Grade: " + grade);  */
 
-    //Opgave 2.25:   Complex validation
+    /*Opgave 2.25:   Complex validation
     int length = 10;
     boolean hasUpper = true;
     boolean hasLower = true;
@@ -220,5 +220,5 @@ void main(){
         System.out.println("Valid password");
     } else {
         System.out.println("Invalid password");
-    }
+    } */
 }
