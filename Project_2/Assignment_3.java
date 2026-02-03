@@ -481,4 +481,26 @@ void main(){
             System.out.println("Invalid day");
     }
     System.out.println("Work hours: " + workHours);
-}
+
+    /*Noter fra zoom:
+    Scanner scan = new Scanner (System.in);
+    boolean keepGoing = true;
+
+    while (keepGoing){
+        System.out.println("running while loop. Do you want to continue? N/Y");
+
+        String input = scan.nextLine();
+        if(input.equals ("N")){
+            keepGoing = false;
+        }
+    }*/
+
+
+
+    //for (int i= 0; i< names.length;, i++){
+        //System.out.println("hej");
+    //}
+    //hvor starter vi?; ;hvor stopper vi? ;hvor meget skal vi hoppe for hver iteration?){
+
+
+    }
