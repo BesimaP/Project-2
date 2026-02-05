@@ -294,7 +294,7 @@ void main(){
     if-else: ranges, complex conditions, forskellige variabler
             */
 
-    /*Opgave 15: Rewrite if-else as swith
+    //Opgave 15: Rewrite if-else as swith
     int choice = 2;
 
     switch (choice){
@@ -309,7 +309,7 @@ void main(){
             break;
         default:
             System.out.println("Invalid");
-    }*/
+    }
 
     /*Opgave 3.16: Why NOT swith?
     int age = 25;
