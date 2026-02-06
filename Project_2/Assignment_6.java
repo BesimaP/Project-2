@@ -155,6 +155,143 @@ void main(){
     System.out.println("Range: " + (max1 - min1));
 
     //Opgave 6.16: Double all value
-    
+    int [] numbers10 = {5, 10, 15, 20};
 
-}
+    System.out.println("Before:");
+    for(int i = 0; i < numbers10.length; i++){
+        System.out.println(numbers10[i] + " ");
+    }
+
+    for (int i = 0; i < numbers10.length; i++){
+        numbers10 [i] = numbers10 [i] * 2;
+    }
+
+    System.out.println("After:");
+    for (int i = 0; i < numbers10.length; i++) {
+        System.out.println(numbers10[i] + " ");
+    }
+
+    //Opgave 6.17:
+    int [] numbers11 = {10, 20, 30, 40};
+
+    System.out.println("Before:");
+    for(int i = 0; i < numbers11.length; i++){
+        System.out.println(numbers11[i] + " ");
+    }
+
+    for (int i = 0; i < numbers11.length; i++){
+        numbers11 [i] = numbers11 [i] + 5;
+    }
+
+    System.out.println("After:");
+    for (int i = 0; i < numbers11.length; i++) {
+        System.out.println(numbers11[i] + " ");
+    }
+
+    //Opgave 6.18: Se negatives to zero
+    int [] numbers12 = {10, -5, 20, -15, 30};
+
+    System.out.println("Before:");
+    for(int i = 0; i < numbers12.length; i++){
+        System.out.println(numbers12[i] + " ");
+    }
+
+    for (int i = 0; i < numbers12.length; i++){
+        if(numbers12[i] < 0){
+            numbers12[i] = 0;
+        }
+    }
+
+    System.out.println("After:");
+    for (int i = 0; i < numbers12.length; i++) {
+        System.out.println(numbers12[i] + " ");
+    }
+
+    //Opgave 6.19: Normalize to percentage
+    int [] scores4 = {25, 50, 75, 100};
+    double [] percentages = new double[scores4.length];
+
+    for (int i = 0; i < scores4.length; i++){
+        percentages[i] = scores4[i] / 100.0;
+    }
+    System.out.println("Percentages:");
+    for ( int i = 0; i < percentages.length; i++){
+        System.out.println(percentages[i]);
+    }
+
+    //Opgave 6.20: Square all walues
+    int [] scores3 = {2, 3, 4, 5};
+
+    System.out.println("Before:");
+    for(int i = 0; i < scores3.length; i++) {
+        System.out.println(scores3[i] + " ");
+    }
+    System.out.println("After:");
+    for (int i = 0; i < scores3.length; i++){
+        scores3[i] = scores3[i] * scores3[i];
+        System.out.println(scores3[i]);
+    }
+
+    //Opgave 6.21: Print backwards
+    int [] numbers13 = {10, 20, 30, 40, 50};
+
+    for(int i = numbers13.length -1; i>= 0; i--){
+        System.out.println(numbers13[i]);
+    }
+    System.out.println("====================");
+
+    //Opgave 22: Reverse sum
+    int [] numbers14 = {5, 10, 15, 20};
+    int sum2 = 0;
+
+    for(int i = numbers14.length -1; i>= 0; i--){
+        sum2 += numbers14 [i];
+        System.out.println("Adding " + numbers14[i] + ", sum = " + sum2);
+    }
+
+    //Opgave 23: Find last oocurrence
+    int [] numbers15 = {10, 20, 30, 20, 40};
+    int target2 = 20;
+    int founderIndex2 = - 1;
+
+    for (int i = numbers15.length - 1; i >= 0; i--){
+        if (numbers15[i] == target2) {
+            founderIndex2 = i;
+            break;
+        }
+    }
+    System.out.println("Last occurrence at Index: " + founderIndex2);
+
+    //Opgave 24: Print alternating
+    int [] numbers17 = {1, 2, 3, 4, 5, 6};
+    int left = 0;
+    int right = numbers17.length -1;
+
+    while (left <= right){
+        System.out.println(numbers17[left]);
+        if (left != right){
+            System.out.println(numbers17[right]);
+        }
+        left++;
+        right--;
+    }
+
+    //Opgave 25: Count from both ends
+    int [] numbers16 = {5, 15, 25, 35, 45, 55};
+    int countStart = 0;
+    int countEnd = 0;
+
+    for(int i = 0; i < numbers16.length; i++){
+        if (numbers16[i] > 20) {
+            countStart++;
+        }
+    }
+
+    for(int i = numbers16.length -1; i>= 0; i--){
+          if (numbers16[i] > 20){
+              countEnd++;
+          }
+    }
+    System.out.println("Start: " + countStart);
+    System.out.println("End: " + countEnd);
+ }
